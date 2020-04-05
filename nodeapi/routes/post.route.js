@@ -4,11 +4,11 @@ const express = require('express')
 //const postController = require('../controllers/post')
 const { getPosts, createPost, postsByUser, postById,
     isPoster, deletePost, updatePost, photo, singlePost, like, unlike,
-    comment, uncomment } = require('../controllers/post')
-const { requireSignin } = require('../controllers/auth')
+    comment, uncomment } = require('../controllers/post.controller')
+const { requireSignin } = require('../controllers/auth.controller')
 // don't need to add index at the end because it's named index.js
 const { createPostValidator } = require('../validator')
-const { userById } = require('../controllers/user')
+const { userById } = require('../controllers/user.controller')
 const router = express.Router()
 
 

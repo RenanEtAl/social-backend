@@ -36,9 +36,9 @@ mongoose.connection.on('error', err => {
 // destructrured
 //const { getPosts } = require('./routes/post')
 
-const postRoutes = require('./routes/post')
-const authRoutes = require('./routes/auth')
-const userRoutes = require('./routes/user')
+const postRoutes = require('./routes/post.route')
+const authRoutes = require('./routes/auth.route')
+const userRoutes = require('./routes/user.route')
 
 // apiDocs
 app.get('/', (req, res) => {

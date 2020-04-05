@@ -1,7 +1,7 @@
 const formidable = require('formidable')
 // node file system
 const fs = require("fs")
-const User = require('../models/user')
+const User = require('../models/user.model')
 
 // _ whenever you use lodash
 const _ = require('lodash')
