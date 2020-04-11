@@ -41,7 +41,7 @@ const authRoutes = require('./routes/auth.route')
 const userRoutes = require('./routes/user.route')
 
 // apiDocs
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   fs.readFile('docs/apiDocs.json', (err, data) => {
     if (err) {
       res.status(400).json({
