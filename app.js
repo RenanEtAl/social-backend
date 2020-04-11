@@ -66,9 +66,9 @@ app.use(cookieParser())
 // with destructured 
 //app.get("/", getPosts);
 // with controller and route thus, postRoutes can act as a middleware
-app.use("/", postRoutes);
-app.use("/", authRoutes);
-app.use("/", userRoutes)
+app.use("/api", postRoutes);
+app.use("/api", authRoutes);
+app.use("/api", userRoutes)
 // from express-jwt package
 app.use(function (err, req, res, next) {
   if (err.name === 'UnauthorizedError') {
